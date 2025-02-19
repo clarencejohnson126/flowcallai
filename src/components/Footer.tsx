@@ -182,9 +182,9 @@ https://ec.europa.eu/consumers/odr/`,
   };
 
   return (
-    <footer className="bg-black border-t border-purple-500/20 py-12">
+    <footer className="bg-black border-t border-purple-500/20">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 py-4">
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Phone className="w-6 h-6 text-purple-500" />
@@ -236,7 +236,7 @@ https://ec.europa.eu/consumers/odr/`,
             <p className="text-gray-400 mb-4">
               Abonniere unseren Newsletter für Updates und Erfolgsgeschichten
             </p>
-            <form onSubmit={handleNewsletterSubmit} className="space-y-2">
+            <form onSubmit={handleNewsletterSubmit}>
               <div className="flex">
                 <input
                   type="email"
@@ -255,17 +255,17 @@ https://ec.europa.eu/consumers/odr/`,
                 </button>
               </div>
               {newsletterStatus === "success" && (
-                <p className="text-green-500 text-sm">Vielen Dank für deine Anmeldung!</p>
+                <p className="text-green-500 text-sm mt-2">Vielen Dank für deine Anmeldung!</p>
               )}
               {newsletterStatus === "error" && (
-                <p className="text-red-500 text-sm">Ein Fehler ist aufgetreten. Bitte versuche es später erneut.</p>
+                <p className="text-red-500 text-sm mt-2">Ein Fehler ist aufgetreten. Bitte versuche es später erneut.</p>
               )}
             </form>
           </div>
         </div>
         
-        <div className="text-center text-gray-400 pt-8 border-t border-purple-500/20">
-          <p>&copy; {new Date().getFullYear()} FlowCall.AI. Alle Rechte vorbehalten.</p>
+        <div className="text-center text-gray-400 border-t border-purple-500/20">
+          <p className="py-2">&copy; {new Date().getFullYear()} FlowCall.AI. Alle Rechte vorbehalten.</p>
         </div>
       </div>
     </footer>

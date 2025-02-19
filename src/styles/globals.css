@@ -168,4 +168,28 @@
   .hero-cta {
     font-size: 14px;
   }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#__next {
+  min-height: 100vh;
+  background: black;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  background: black;
+  width: 100%;
+}
+
+footer .extra-content {
+  display: none;
 } 
