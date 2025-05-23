@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { WavyBackground } from "@/components/ui/wavy-background";
+import { PhoneCall, Clock, DollarSign, TrendingUp } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -32,25 +33,25 @@ export default function Hero() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 w-full max-w-4xl">
           <div className="bg-black/20 backdrop-blur-sm rounded-lg p-4 text-center">
             <div className="flex justify-center mb-2">
-              <span className="text-purple-600 text-2xl">📞</span>
+              <PhoneCall className="w-6 h-6 text-purple-600" />
             </div>
             <p className="text-white text-sm">1000 Anrufe pro Tag, Wahnsinn!</p>
           </div>
           <div className="bg-black/20 backdrop-blur-sm rounded-lg p-4 text-center">
             <div className="flex justify-center mb-2">
-              <span className="text-purple-600 text-2xl">⏰</span>
+              <Clock className="w-6 h-6 text-purple-600" />
             </div>
             <p className="text-white text-sm">24/7 Verfügbarkeit</p>
           </div>
           <div className="bg-black/20 backdrop-blur-sm rounded-lg p-4 text-center">
             <div className="flex justify-center mb-2">
-              <span className="text-purple-600 text-2xl">💰</span>
+              <DollarSign className="w-6 h-6 text-purple-600" />
             </div>
             <p className="text-white text-sm">50% Kostenreduktion</p>
           </div>
           <div className="bg-black/20 backdrop-blur-sm rounded-lg p-4 text-center">
             <div className="flex justify-center mb-2">
-              <span className="text-purple-600 text-2xl">📈</span>
+              <TrendingUp className="w-6 h-6 text-purple-600" />
             </div>
             <p className="text-white text-sm">Skalierbare Lösung</p>
           </div>
