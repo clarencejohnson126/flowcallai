@@ -26,7 +26,7 @@
   left: 0;
   width: 200%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(74, 11, 255, 0.3) 0%, rgba(11, 127, 255, 0.3) 100%);
+  background: linear-gradient(135deg, rgba(255, 116, 21, 0.3) 0%, rgba(11, 127, 255, 0.3) 100%);
   transform-origin: center bottom;
 }
 
