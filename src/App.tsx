@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import AI16zFramework from './components/AI16zFramework';
 import RealLifeExamples from './components/RealLifeExamples';
+import VoiceAgentCourse from './components/VoiceAgentCourse';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <SalesAdvantages />
       <Demo />
       <RealLifeExamples />
+      <VoiceAgentCourse />
       <AI16zFramework />
       <Contact />
       <Footer />
