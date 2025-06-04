@@ -16,10 +16,10 @@ function ExpandableContent({ title, content }: ExpandableContentProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="border-b border-purple-500/10 last:border-b-0">
+    <div className="border-b border-green-500/10 last:border-b-0">
       <button
         onClick={() => setIsExpanded(!isExpanded)}
-        className="w-full flex items-center justify-between py-2 text-left text-gray-400 hover:text-purple-400 transition-colors"
+        className="w-full flex items-center justify-between py-2 text-left text-gray-400 hover:text-green-400 transition-colors"
       >
         <span>{title}</span>
         {isExpanded ? (
@@ -182,13 +182,13 @@ https://ec.europa.eu/consumers/odr/`,
   };
 
   return (
-    <footer className="bg-black border-t border-purple-500/20">
+    <footer className="bg-black border-t border-green-500/20">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 py-4">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <Phone className="w-6 h-6 text-purple-500" />
-              <span className="text-xl font-bold bg-gradient-to-r from-purple-500 to-cyan-400 bg-clip-text text-transparent">
+              <Phone className="w-6 h-6 text-green-500" />
+              <span className="text-xl font-bold bg-gradient-to-r from-green-500 to-green-400 bg-clip-text text-transparent">
                 FlowCall.AI
               </span>
             </div>
@@ -214,7 +214,7 @@ https://ec.europa.eu/consumers/odr/`,
                 href="https://x.com/rebelz_ai"
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="text-gray-400 hover:text-purple-400"
+                className="text-gray-400 hover:text-green-400"
               >
                 <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
@@ -243,13 +243,13 @@ https://ec.europa.eu/consumers/odr/`,
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="E-Mail-Adresse"
-                  className="flex-1 bg-black/50 border border-purple-500/20 rounded-l-lg px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500"
+                  className="flex-1 bg-black/50 border border-green-500/20 rounded-l-lg px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:border-green-500"
                   required
                 />
                 <button 
                   type="submit"
                   disabled={newsletterStatus === "loading"}
-                  className="bg-gradient-to-r from-purple-500 to-cyan-400 text-white px-4 py-2 rounded-r-lg hover:opacity-90 transition-opacity disabled:opacity-50"
+                  className="bg-gradient-to-r from-green-500 to-green-400 text-white px-4 py-2 rounded-r-lg hover:opacity-90 transition-opacity disabled:opacity-50"
                 >
                   {newsletterStatus === "loading" ? "..." : "Abonnieren"}
                 </button>
@@ -264,7 +264,7 @@ https://ec.europa.eu/consumers/odr/`,
           </div>
         </div>
         
-        <div className="text-center text-gray-400 border-t border-purple-500/20">
+        <div className="text-center text-gray-400 border-t border-green-500/20">
           <p className="py-2">&copy; {new Date().getFullYear()} FlowCall.AI. Alle Rechte vorbehalten.</p>
         </div>
       </div>

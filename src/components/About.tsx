@@ -7,22 +7,22 @@ export default function About() {
 
   const features = [
     {
-      icon: <PhoneIncoming className="w-8 h-8 text-purple-500" />,
+      icon: <PhoneIncoming className="w-8 h-8 text-green-500" />,
       title: t('about.features.inbound.title'),
       description: t('about.features.inbound.description')
     },
     {
-      icon: <PhoneOutgoing className="w-8 h-8 text-purple-500" />,
+      icon: <PhoneOutgoing className="w-8 h-8 text-green-500" />,
       title: t('about.features.outbound.title'),
       description: t('about.features.outbound.description')
     },
     {
-      icon: <LineChart className="w-8 h-8 text-purple-500" />,
+      icon: <LineChart className="w-8 h-8 text-green-500" />,
       title: t('about.features.costs.title'),
       description: t('about.features.costs.description')
     },
     {
-      icon: <Users className="w-8 h-8 text-purple-500" />,
+      icon: <Users className="w-8 h-8 text-green-500" />,
       title: t('about.features.scalable.title'),
       description: t('about.features.scalable.description')
     }
@@ -30,22 +30,22 @@ export default function About() {
 
   const painPoints = [
     {
-      icon: <Clock className="w-8 h-8 text-purple-500" />,
+      icon: <Clock className="w-8 h-8 text-green-500" />,
       title: t('about.challenges.availability.title'),
       description: t('about.challenges.availability.description')
     },
     {
-      icon: <Target className="w-8 h-8 text-purple-500" />,
+      icon: <Target className="w-8 h-8 text-green-500" />,
       title: t('about.challenges.costs.title'),
       description: t('about.challenges.costs.description')
     },
     {
-      icon: <Zap className="w-8 h-8 text-purple-500" />,
+      icon: <Zap className="w-8 h-8 text-green-500" />,
       title: t('about.challenges.scalability.title'),
       description: t('about.challenges.scalability.description')
     },
     {
-      icon: <Brain className="w-8 h-8 text-purple-500" />,
+      icon: <Brain className="w-8 h-8 text-green-500" />,
       title: t('about.challenges.quality.title'),
       description: t('about.challenges.quality.description')
     }
@@ -73,7 +73,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
-                className="bg-black/50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-purple-500/20"
+                className="bg-black/50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-green-500/20"
               >
                 <div className="mb-4">{feature.icon}</div>
                 <h3 className="text-xl font-semibold text-white mb-2">
@@ -106,7 +106,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
-                className="bg-black/50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-purple-500/20"
+                className="bg-black/50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-green-500/20"
               >
                 <div className="mb-4">{point.icon}</div>
                 <h3 className="text-xl font-semibold text-white mb-2">

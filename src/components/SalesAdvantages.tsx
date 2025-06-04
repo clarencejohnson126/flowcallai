@@ -17,25 +17,25 @@ import {
 export default function SalesAdvantages() {
   const advantages = [
     {
-      icon: <PhoneCall className="w-16 h-16 text-purple-500" />,
+      icon: <PhoneCall className="w-16 h-16 text-green-500" />,
       title: "1000+ Anrufe pro Tag",
       description: "Maximale Reichweite durch parallele Gespräche rund um die Uhr",
       stats: "30.000+ Anrufe pro Monat"
     },
     {
-      icon: <Globe2 className="w-16 h-16 text-purple-500" />,
+      icon: <Globe2 className="w-16 h-16 text-green-500" />,
       title: "Multilinguale Kommunikation",
       description: "Nahtlose Gespräche in über 20 Sprachen und lokalen Dialekten",
       stats: "20+ Sprachen verfügbar"
     },
     {
-      icon: <Calendar className="w-16 h-16 text-purple-500" />,
+      icon: <Calendar className="w-16 h-16 text-green-500" />,
       title: "Automatische Terminbuchung",
       description: "Direkte Integration in Ihren Kalender mit intelligenter Terminfindung",
       stats: "95% Buchungseffizienz"
     },
     {
-      icon: <MessageSquare className="w-16 h-16 text-purple-500" />,
+      icon: <MessageSquare className="w-16 h-16 text-green-500" />,
       title: "Personalisierte Gespräche",
       description: "Individuelle Gesprächsführung basierend auf Kundenhistorie",
       stats: "90% natürliche Interaktion"
@@ -44,25 +44,25 @@ export default function SalesAdvantages() {
 
   const metrics = [
     {
-      icon: <BadgeCheck className="w-8 h-8 text-purple-500" />,
+      icon: <BadgeCheck className="w-8 h-8 text-green-500" />,
       title: "Kundenzufriedenheit",
       value: "98%",
       description: "positive Bewertungen"
     },
     {
-      icon: <TrendingUp className="w-8 h-8 text-purple-500" />,
+      icon: <TrendingUp className="w-8 h-8 text-green-500" />,
       title: "Effizienzsteigerung",
       value: "300%",
       description: "mehr Interaktionen"
     },
     {
-      icon: <Clock className="w-8 h-8 text-purple-500" />,
+      icon: <Clock className="w-8 h-8 text-green-500" />,
       title: "Verfügbarkeit",
       value: "24/7",
       description: "kontinuierlicher Service"
     },
     {
-      icon: <BrainCircuit className="w-8 h-8 text-purple-500" />,
+      icon: <BrainCircuit className="w-8 h-8 text-green-500" />,
       title: "Lernfähigkeit",
       value: "100%",
       description: "konstante Optimierung"
@@ -95,7 +95,7 @@ export default function SalesAdvantages() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
-              className="bg-gradient-to-br from-purple-900/20 to-black p-8 rounded-2xl border border-purple-500/20 hover:border-purple-500/40 transition-all duration-300 group"
+              className="bg-gradient-to-br from-green-900/20 to-black p-8 rounded-2xl border border-green-500/20 hover:border-green-500/40 transition-all duration-300 group"
             >
               <div className="flex items-start gap-6">
                 <div className="transform transition-transform duration-300 group-hover:scale-110">
@@ -108,8 +108,8 @@ export default function SalesAdvantages() {
                   <p className="text-gray-300 mb-4">
                     {advantage.description}
                   </p>
-                  <div className="inline-block bg-purple-500/10 px-4 py-2 rounded-full">
-                    <span className="text-purple-400 font-semibold">
+                  <div className="inline-block bg-green-500/10 px-4 py-2 rounded-full">
+                    <span className="text-green-400 font-semibold">
                       {advantage.stats}
                     </span>
                   </div>
@@ -127,7 +127,7 @@ export default function SalesAdvantages() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-black/50 p-6 rounded-xl border border-purple-500/20 text-center"
+              className="bg-black/50 p-6 rounded-xl border border-green-500/20 text-center"
             >
               <div className="flex justify-center mb-4">
                 {metric.icon}
@@ -138,7 +138,7 @@ export default function SalesAdvantages() {
               <p className="text-sm text-gray-400">
                 {metric.title}
               </p>
-              <p className="text-xs text-purple-400 mt-1">
+              <p className="text-xs text-green-400 mt-1">
                 {metric.description}
               </p>
             </motion.div>

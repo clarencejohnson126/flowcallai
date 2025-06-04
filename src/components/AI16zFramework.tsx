@@ -21,7 +21,7 @@ export default function AI16zFramework() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <span className="text-purple-500 font-semibold mb-4 block">
+          <span className="text-green-500 font-semibold mb-4 block">
             POWERED BY AI16Z
           </span>
           <h2 className="text-4xl font-bold text-white mb-6">
@@ -42,7 +42,7 @@ export default function AI16zFramework() {
             <img 
               src="/image/eliza ai16z image.png" 
               alt="AI16z Framework" 
-              className="rounded-2xl shadow-2xl border border-purple-500/20"
+              className="rounded-2xl shadow-2xl border border-green-500/20"
             />
           </motion.div>
 
@@ -60,9 +60,9 @@ export default function AI16zFramework() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: index * 0.1 }}
-                className="flex items-start space-x-3 bg-gradient-to-br from-purple-900/20 to-black p-4 rounded-lg border border-purple-500/20"
+                className="flex items-start space-x-3 bg-gradient-to-br from-green-900/20 to-black p-4 rounded-lg border border-green-500/20"
               >
-                <Check className="w-6 h-6 text-purple-500 flex-shrink-0 mt-1" />
+                <Check className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" />
                 <p className="text-gray-300">{benefit}</p>
               </motion.div>
             ))}
