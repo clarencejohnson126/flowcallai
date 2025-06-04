@@ -41,7 +41,7 @@ export default function ContactForm() {
                   id="name"
                   name="name"
                   required
-                  className="w-full bg-black/50 border border-purple-500/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors"
+                  className="w-full bg-black/50 border border-green-500/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-green-500 transition-colors"
                   placeholder={t('contact.form.name')}
                 />
               </div>
@@ -54,7 +54,7 @@ export default function ContactForm() {
                   id="email"
                   name="email"
                   required
-                  className="w-full bg-black/50 border border-purple-500/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors"
+                  className="w-full bg-black/50 border border-green-500/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-green-500 transition-colors"
                   placeholder={t('contact.form.email')}
                 />
               </div>
@@ -70,7 +70,7 @@ export default function ContactForm() {
                   id="company"
                   name="company"
                   required
-                  className="w-full bg-black/50 border border-purple-500/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors"
+                  className="w-full bg-black/50 border border-green-500/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-green-500 transition-colors"
                   placeholder={t('contact.form.company')}
                 />
               </div>
@@ -83,7 +83,7 @@ export default function ContactForm() {
                   id="phone"
                   name="phone"
                   required
-                  className="w-full bg-black/50 border border-purple-500/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors"
+                  className="w-full bg-black/50 border border-green-500/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-green-500 transition-colors"
                   placeholder={t('contact.form.phone')}
                 />
               </div>
@@ -98,14 +98,14 @@ export default function ContactForm() {
                 name="message"
                 rows={4}
                 required
-                className="w-full bg-black/50 border border-purple-500/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors"
+                className="w-full bg-black/50 border border-green-500/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-green-500 transition-colors"
                 placeholder={t('contact.form.message')}
               ></textarea>
             </div>
 
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-purple-500 to-cyan-400 text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition-all duration-300 flex items-center justify-center space-x-2 group"
+              className="w-full bg-gradient-to-r from-green-500 to-green-400 text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition-all duration-300 flex items-center justify-center space-x-2 group"
             >
               <span>{t('contact.form.submit')}</span>
               <Send className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />

@@ -42,17 +42,17 @@ export default function Contact() {
 
   const benefits = [
     {
-      icon: <Calendar className="w-12 h-12 text-purple-500" />,
+      icon: <Calendar className="w-12 h-12 text-green-500" />,
       title: "Kostenlose Demo",
       description: "Erleben Sie live, wie unsere Voice Agents Ihre Kommunikation revolutionieren"
     },
     {
-      icon: <CheckCircle className="w-12 h-12 text-purple-500" />,
+      icon: <CheckCircle className="w-12 h-12 text-green-500" />,
       title: "Unverbindlich",
       description: "Keine versteckten Kosten oder Verpflichtungen"
     },
     {
-      icon: <ArrowRight className="w-12 h-12 text-purple-500" />,
+      icon: <ArrowRight className="w-12 h-12 text-green-500" />,
       title: "Schneller Start",
       description: "In wenigen Tagen einsatzbereit"
     }
@@ -112,9 +112,9 @@ export default function Contact() {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="max-w-2xl mx-auto text-center bg-gradient-to-br from-purple-900/20 to-black p-8 rounded-2xl border border-purple-500/20"
+            className="max-w-2xl mx-auto text-center bg-gradient-to-br from-green-900/20 to-black p-8 rounded-2xl border border-green-500/20"
           >
-            <CheckCircle className="w-16 h-16 text-purple-500 mx-auto mb-6" />
+            <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-6" />
             <h2 className="text-3xl font-bold text-white mb-4">
               Ihre Anfrage ist eingegangen!
             </h2>
@@ -123,7 +123,7 @@ export default function Contact() {
             </p>
             <button
               onClick={() => setIsSuccess(false)}
-              className="bg-gradient-to-r from-purple-500 to-cyan-400 text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition-all duration-300"
+              className="bg-gradient-to-r from-green-500 to-green-400 text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition-all duration-300"
             >
               Neues Formular
             </button>
@@ -143,7 +143,7 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <span className="text-purple-500 font-semibold mb-4 block">
+          <span className="text-green-500 font-semibold mb-4 block">
             STARTEN SIE JETZT
           </span>
           <h2 className="text-4xl font-bold text-white mb-4">
@@ -163,7 +163,7 @@ export default function Contact() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
-              className="bg-gradient-to-br from-purple-900/20 to-black p-8 rounded-2xl border border-purple-500/20 text-center"
+              className="bg-gradient-to-br from-green-900/20 to-black p-8 rounded-2xl border border-green-500/20 text-center"
             >
               <div className="flex justify-center mb-4">
                 {benefit.icon}
@@ -196,7 +196,7 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             onSubmit={handleSubmit}
-            className="space-y-6 bg-gradient-to-br from-purple-900/20 to-black p-8 rounded-2xl border border-purple-500/20"
+            className="space-y-6 bg-gradient-to-br from-green-900/20 to-black p-8 rounded-2xl border border-green-500/20"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="relative">
@@ -206,7 +206,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleInputChange}
                   placeholder={t('contact.form.name')}
-                  className="w-full bg-black/50 border border-purple-500/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500"
+                  className="w-full bg-black/50 border border-green-500/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-green-500"
                   required
                 />
               </div>
@@ -217,7 +217,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleInputChange}
                   placeholder={t('contact.form.email')}
-                  className="w-full bg-black/50 border border-purple-500/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500"
+                  className="w-full bg-black/50 border border-green-500/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-green-500"
                   required
                 />
               </div>
@@ -230,7 +230,7 @@ export default function Contact() {
                   value={formData.company}
                   onChange={handleInputChange}
                   placeholder={t('contact.form.company')}
-                  className="w-full bg-black/50 border border-purple-500/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500"
+                  className="w-full bg-black/50 border border-green-500/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-green-500"
                   required
                 />
               </div>
@@ -241,7 +241,7 @@ export default function Contact() {
                   value={formData.phone}
                   onChange={handleInputChange}
                   placeholder={t('contact.form.phone')}
-                  className="w-full bg-black/50 border border-purple-500/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500"
+                  className="w-full bg-black/50 border border-green-500/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-green-500"
                   required
                 />
               </div>
@@ -253,7 +253,7 @@ export default function Contact() {
                 onChange={handleInputChange}
                 placeholder="Wie können wir Ihnen helfen? (Optional)"
                 rows={4}
-                className="w-full bg-black/50 border border-purple-500/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500"
+                className="w-full bg-black/50 border border-green-500/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-green-500"
               ></textarea>
             </div>
             <div className="text-sm text-gray-400 mb-4">
@@ -262,7 +262,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-gradient-to-r from-purple-500 to-cyan-400 text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition-all duration-300 flex items-center justify-center space-x-2 group disabled:opacity-50"
+              className="w-full bg-gradient-to-r from-green-500 to-green-400 text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition-all duration-300 flex items-center justify-center space-x-2 group disabled:opacity-50"
             >
               {isSubmitting ? (
                 <>

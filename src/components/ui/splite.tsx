@@ -26,7 +26,7 @@ export function SplineScene({ scene, className }: SplineSceneProps) {
       {isLoading && !error && (
         <div className="w-full h-full flex items-center justify-center text-gray-400">
           <div className="flex flex-col items-center space-y-4">
-            <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-purple-500"></div>
+            <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-green-500"></div>
             <span>Loading 3D scene...</span>
           </div>
         </div>

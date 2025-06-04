@@ -135,7 +135,7 @@ export default function Demo() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
-              className="bg-black/50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-purple-500/20"
+              className="bg-black/50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-green-500/20"
             >
               <h3 className="text-xl font-semibold text-white mb-4">
                 {demo.title}
@@ -147,7 +147,7 @@ export default function Demo() {
                 <button 
                   onClick={() => playDemo(index)}
                   disabled={isLoading && currentlyPlaying !== index}
-                  className="flex items-center space-x-2 text-purple-500 hover:text-purple-400 transition-colors disabled:opacity-50"
+                  className="flex items-center space-x-2 text-green-500 hover:text-green-400 transition-colors disabled:opacity-50"
                 >
                   {isLoading && currentlyPlaying === index ? (
                     <Loader2 className="w-5 h-5 animate-spin" />
@@ -180,7 +180,7 @@ export default function Demo() {
                     {demo.conversation.map((line, lineIndex) => (
                       <div key={lineIndex} className="space-y-1">
                         <div className={`font-semibold ${
-                          line.speaker === 'agent' ? 'text-purple-400' : 'text-cyan-400'
+                          line.speaker === 'agent' ? 'text-green-400' : 'text-cyan-400'
                         }`}>
                           {line.name}:
                         </div>

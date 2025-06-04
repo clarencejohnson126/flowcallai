@@ -16,42 +16,42 @@ export default function Benefits() {
 
   const benefits = [
     {
-      icon: <Brain className="w-12 h-12 text-purple-500" />,
+      icon: <Brain className="w-12 h-12 text-green-500" />,
       title: t('benefits.items.conversation.title'),
       description: t('benefits.items.conversation.description')
     },
     {
-      icon: <Clock className="w-12 h-12 text-purple-500" />,
+      icon: <Clock className="w-12 h-12 text-green-500" />,
       title: t('benefits.items.availability.title'),
       description: t('benefits.items.availability.description')
     },
     {
-      icon: <TrendingUp className="w-12 h-12 text-purple-500" />,
+      icon: <TrendingUp className="w-12 h-12 text-green-500" />,
       title: t('benefits.items.performance.title'),
       description: t('benefits.items.performance.description')
     },
     {
-      icon: <Users className="w-12 h-12 text-purple-500" />,
+      icon: <Users className="w-12 h-12 text-green-500" />,
       title: t('benefits.items.personalization.title'),
       description: t('benefits.items.personalization.description')
     },
     {
-      icon: <HeartHandshake className="w-12 h-12 text-purple-500" />,
+      icon: <HeartHandshake className="w-12 h-12 text-green-500" />,
       title: t('benefits.items.emotion.title'),
       description: t('benefits.items.emotion.description')
     },
     {
-      icon: <Shield className="w-12 h-12 text-purple-500" />,
+      icon: <Shield className="w-12 h-12 text-green-500" />,
       title: t('benefits.items.security.title'),
       description: t('benefits.items.security.description')
     },
     {
-      icon: <Languages className="w-12 h-12 text-purple-500" />,
+      icon: <Languages className="w-12 h-12 text-green-500" />,
       title: t('benefits.items.multilingual.title'),
       description: t('benefits.items.multilingual.description')
     },
     {
-      icon: <LineChart className="w-12 h-12 text-purple-500" />,
+      icon: <LineChart className="w-12 h-12 text-green-500" />,
       title: t('benefits.items.optimization.title'),
       description: t('benefits.items.optimization.description')
     }
@@ -83,7 +83,7 @@ export default function Benefits() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
-              className="bg-gradient-to-br from-black to-purple-950/30 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-purple-500/20 hover:border-purple-500/40 group"
+              className="bg-gradient-to-br from-black to-green-950/30 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-green-500/20 hover:border-green-500/40 group"
             >
               <div className="mb-6 transform transition-transform duration-300 group-hover:scale-110">
                 {benefit.icon}
